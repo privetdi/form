@@ -1,0 +1,19 @@
+div.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 16px;
+  img {
+    width: 12px;
+    height: 12px;
+  }
+  a {
+    text-decoration: none;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5558fa;
+  }
+}

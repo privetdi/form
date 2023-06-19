@@ -1,0 +1,27 @@
+.inputMarkup {
+  .inputMarkup__lable {
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+  .inputMarkup__Input {
+    align-items: flex-start;
+    padding: 12px;
+    width: 400px;
+    height: 44px;
+
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 0px 12px;
+  }
+  .email,
+  .phone {
+    background: rgba(0, 0, 0, 0.04);
+  }
+}
