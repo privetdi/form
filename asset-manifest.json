@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/form/static/css/main.4ff5994f.css",
-    "main.js": "/form/static/js/main.c46d74aa.js",
+    "main.css": "/form/static/css/main.2a637941.css",
+    "main.js": "/form/static/js/main.ce3a787f.js",
     "static/media/btnRemove.svg": "/form/static/media/btnRemove.1650c7a175b934b2f27aefc55c49453f.svg",
     "index.html": "/form/index.html",
-    "main.4ff5994f.css.map": "/form/static/css/main.4ff5994f.css.map",
-    "main.c46d74aa.js.map": "/form/static/js/main.c46d74aa.js.map"
+    "main.2a637941.css.map": "/form/static/css/main.2a637941.css.map",
+    "main.ce3a787f.js.map": "/form/static/js/main.ce3a787f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ff5994f.css",
-    "static/js/main.c46d74aa.js"
+    "static/css/main.2a637941.css",
+    "static/js/main.ce3a787f.js"
   ]
 }
