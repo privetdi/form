@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <Layout>{children}</Layout>
+      <Layout> 'test pages'{children}</Layout>
     </div>
   )
 }
