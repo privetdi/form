@@ -8,9 +8,15 @@ import Input from '../input'
 import Button from '../button'
 import TabMap from './tabMap'
 import './tabs.scss'
-import Select from '../select'
+import SelectComponent from '../select'
 
-function Tab2({ cb }: { cb: () => void }) {
+function Tab2({
+  cbNext,
+  cbBack,
+}: {
+  cbNext?: () => void
+  cbBack?: () => void
+}) {
   const dispatch = useDispatch()
   let phone = useSelector((state: RootState) => state.store.tab1.phone)
   let email = useSelector((state: RootState) => state.store.tab1.email)
@@ -31,6 +37,7 @@ function Tab2({ cb }: { cb: () => void }) {
         placeholder="placeholder"
         cb={setDispatchPhone}
         value={phone}
+        id={0}
       />
       <Input
         label="Name"
@@ -39,24 +46,23 @@ function Tab2({ cb }: { cb: () => void }) {
         placeholder="placeholder"
         cb={setDispatchEmail}
         value={email}
+        id={0}
       />
       <Input
-        label="Sername"
+        label="Surname"
         classN="email"
         defaultValue="123"
         placeholder="placeholder"
         cb={setDispatchEmail}
         value={email}
+        id={0}
       />
       <h1 className="selectMarkup__lable">Sex</h1>
-      <Select
-        placeHolder={'sex'}
-        options={[
-          { value: 'meb', label: 'men' },
-          { value: 'women', label: 'women' },
-        ]}
-      />
-      <Button id="button-start" classN="blue" text="Начать" cb={cb} />
+      <SelectComponent />
+      <div className="buttonWraper">
+        <Button id="button-back" classN="" text="Назад" cb={cbBack} />
+        <Button id="button-next" classN="blue" text="Далее" cb={cbNext} />
+      </div>
     </>
   )
 }

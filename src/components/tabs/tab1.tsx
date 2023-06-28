@@ -7,7 +7,7 @@ import Profil from '../profil'
 import Input from '../input'
 import Button from '../button'
 
-function Tab1({ cb }: { cb: () => void }) {
+function Tab1({ cbNext }: { cbNext: () => void }) {
   const dispatch = useDispatch()
   let phone = useSelector((state: RootState) => state.store.tab1.phone)
   let email = useSelector((state: RootState) => state.store.tab1.email)
@@ -20,6 +20,7 @@ function Tab1({ cb }: { cb: () => void }) {
   }
   return (
     <>
+      <Profil number={123} />
       <Input
         label="Номер телефона"
         classN="phone"
@@ -27,6 +28,7 @@ function Tab1({ cb }: { cb: () => void }) {
         placeholder="+7 999 999-99-99"
         cb={setDispatchPhone}
         value={phone}
+        id={0}
       />
       <Input
         label="Email"
@@ -35,8 +37,9 @@ function Tab1({ cb }: { cb: () => void }) {
         placeholder="tim.jennings@example.com"
         cb={setDispatchEmail}
         value={email}
+        id={0}
       />
-      <Button id="button-start" classN="blue" text="Начать" cb={cb} />
+      <Button id="button-start" classN="blue" text="Начать" cb={cbNext} />
     </>
   )
 }

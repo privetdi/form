@@ -7,10 +7,10 @@
   width: 79px;
   height: 44px;
   border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid transparent;
 }
 .button__text {
-  width: 41px;
-  height: 20px;
   font-family: 'SB Sans Interface';
   font-style: normal;
   font-weight: 400;
@@ -23,8 +23,26 @@
   .button__text {
     color: #ffffff;
   }
+  &.modalBtn {
+    width: 109px;
+    height: 44px;
+    .button__text {
+      width: 77px;
+      height: 20px;
+      margin: 0;
+      font-size: 14px;
+      font-family: SB Sans Interface;
+      line-height: 20px;
+    }
+  }
 }
-
+.buttonAdd {
+  margin-top: 8px;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border: #5558fa solid 2px;
+}
 #button-start {
   margin: 48px 0px;
 }

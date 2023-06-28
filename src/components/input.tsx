@@ -2,19 +2,19 @@ import React, { useState } from 'react'
 import './input.scss'
 
 interface InputI {
-  label: string
+  label?: string
   classN: string
-  id?: string
+  id: number
   defaultValue: string
   placeholder: string
-  cb?: (e: React.ChangeEvent<HTMLInputElement>) => void
+  cb: (e: React.ChangeEvent<HTMLInputElement>, id: number) => void
   value: string
 }
 
 function Input({
   label,
   classN,
-  id,
+  id = 0,
   defaultValue,
   placeholder,
   cb,
@@ -22,13 +22,15 @@ function Input({
 }: InputI) {
   return (
     <div className="inputMarkup">
-      <h1 className="inputMarkup__lable">{label}</h1>
+      {label ? <h1 className="inputMarkup__lable">{label}</h1> : null}
       <input
-        id={id}
+        id={`field-advatages-${id}`}
         className={`inputMarkup__Input ${classN}`}
         type="text"
         placeholder={placeholder}
-        onChange={cb}
+        onChange={(e) => {
+          cb(e, id)
+        }}
         value={value}
       />
     </div>
