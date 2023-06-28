@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/form/static/css/main.4ff5994f.css",
+    "main.js": "/form/static/js/main.8ab3ed70.js",
+    "static/media/btnRemove.svg": "/form/static/media/btnRemove.1650c7a175b934b2f27aefc55c49453f.svg",
+    "index.html": "/form/index.html",
+    "main.4ff5994f.css.map": "/form/static/css/main.4ff5994f.css.map",
+    "main.8ab3ed70.js.map": "/form/static/js/main.8ab3ed70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ff5994f.css",
+    "static/js/main.8ab3ed70.js"
+  ]
+}
